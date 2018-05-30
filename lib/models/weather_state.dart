@@ -37,6 +37,15 @@ class WeatherState {
         isValidCity = true,
         this.isLoading = true;
 
+  WeatherState.error()
+      : city = constants.defaultCity,
+        temperature = null,
+        temperatureMin = null,
+        temperatureMax = null,
+        humidity = null,
+        isValidCity = false,
+        this.isLoading = false;
+
   @override
   String toString() => '''
     WeatherState {

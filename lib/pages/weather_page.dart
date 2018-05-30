@@ -6,6 +6,7 @@ import './../bloc/weather_bloc.dart';
 import './../provider/weather_provider.dart';
 
 class WeatherPage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     WeatherBloc weatherBloc = WeatherProvider.of(context);
@@ -103,7 +104,7 @@ class WeatherPage extends StatelessWidget {
                                           color: Colors.red),
                                     ),
                                   )),
-                            ]) //_updateTemperature('Mumbai')
+                            ])
                         ),
                     Container(
                         alignment: Alignment.center,

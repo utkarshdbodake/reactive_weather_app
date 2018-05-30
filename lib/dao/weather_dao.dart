@@ -21,12 +21,6 @@ class WeatherDao {
             temperatureMin: data['main']['temp_min'].toDouble(),
             temperatureMax: data['main']['temp_max'].toDouble(),
             humidity: data['main']['humidity'].toDouble()))
-        .catchError((error) => WeatherState(
-            city: null,
-            temperature: null,
-            temperatureMin: null,
-            temperatureMax: null,
-            humidity: null,
-            isValidCity: false));
+        .catchError((error) => WeatherState.error());
   }
 }

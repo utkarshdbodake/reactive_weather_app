@@ -4,6 +4,7 @@ import './../bloc/weather_bloc.dart';
 import './../provider/weather_provider.dart';
 
 class CityPage extends StatelessWidget {
+
   @override
   Widget build(BuildContext context) {
     WeatherBloc weatherBloc = WeatherProvider.of(context);
